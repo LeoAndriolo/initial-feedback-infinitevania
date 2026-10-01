@@ -1,4 +1,4 @@
-# Relatório de Playtest / QA Infinitevania
+# Relatório de Playtest Infinitevania
 
 Este relatório reúne o playtest e QA inicial de Infinitevania v1.0.4, com foco em bugs, UI/UX, inputs, legibilidade e comportamento técnico. O processo incluiu um playtest natural e um Tech Test utilizando BepInEx, UnityExplorer e um plugin próprio para visualizar colliders.
 
