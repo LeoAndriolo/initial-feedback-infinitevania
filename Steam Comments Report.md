@@ -32,7 +32,8 @@ relato posterior à 1.0.4 | Reproduzir antes de classificar
 
 Um jogador relata dificuldade para recuperar recursos após morrer e descreve uma caveira que não aparece como esperado. O texto não permite determinar se falhou a caveira, a interação ou a regra de recuperação ([20/09, 1,9 h - relato original](https://steamcommunity.com/profiles/76561198081145965/recommended/1983620/)).
 
-**Pedido concreto:** Pedir ao jogador detalhes ou reproduzir morte, retorno e coleta com diferentes saves. Critério: a regra prevista fica clara e, se houver falha, o recurso pode ser recuperado de forma consistente.
+**Sugestão:** Reproduzir morte, retorno e coleta com diferentes saves. 
+Critério: a regra prevista fica clara e, se houver falha, o recurso pode ser recuperado de forma consistente.
 
 ### Resposta dos controles
 
@@ -40,15 +41,17 @@ Um jogador relata dificuldade para recuperar recursos após morrer e descreve um
 
 Alguns jogadores percebem atraso ou peso ([13/09, 0,7 h - atraso em combate](https://steamcommunity.com/profiles/76561197974956415/recommended/1983620/)), enquanto outros elogiam precisão. Uma mudança global sem medição pode afetar trechos que funcionam.
 
-**Pedido concreto:** Comparar o momento do botão, da animação, do deslocamento e do golpe em encontros citados. Critério: a causa de qualquer atraso reproduzido é identificada e o ajuste não piora as seções elogiadas.
+**Sugestão:** Comparar (através de debug) o momento de ativação do botão, da animação, do deslocamento e do golpe em encontros citados. 
+Critério: a causa de qualquer atraso reproduzido é identificada e o ajuste não piora as seções elogiadas.
 
 ### Save da demo
 
-1/100\* | Relato antigo; caso distinto de save corrompido
+1/100\* | Relato antigo; caso distinto de save corrompido (Baixa importância pois a demo parece não estar mais disponível)
 
 Um jogador relatou carregamento infinito ao abrir seu save da demo ([25/07, 8,7 h - save da demo](https://steamcommunity.com/profiles/76561198303303614/recommended/1983620/)). A 1.0.3 menciona dados corrompidos, mas não migração da demo.
 
-**Pedido concreto:** Testar saves válidos e inválidos da demo na versão atual. Critério: o save abre ou mostra uma mensagem recuperável, sem carregamento infinito.
+**Sugestão:** Testar saves válidos e inválidos da demo na versão atual.
+Critério: o save abre ou mostra uma mensagem recuperável, sem carregamento infinito.
 
 ## Regressão das correções publicadas
 
@@ -58,17 +61,19 @@ Um jogador relatou carregamento infinito ao abrir seu save da demo ([25/07, 8,7 
 
 Os relatos de entrada em paredes, quinas indevidas e passagem por portões na amostra são de julho ([27/07, 6,5 h - portão no castelo](https://steamcommunity.com/profiles/76561198942236192/recommended/1983620/); [25/07, 8,7 h - atravessar paredes](https://steamcommunity.com/profiles/76561198303303614/recommended/1983620/)). As notas citam várias rotas corrigidas, sem comprovar todos os cenários.
 
-**Pedido concreto:** Repetir rotas relatadas com quinas, dano perto de portões e espinhos. Critério: o personagem não antecipa um save, não atravessa barreiras previstas e não fica preso; encerrar os casos já resolvidos.
+**Sugestão:** Repetir rotas relatadas com quinas, dano perto de portões e espinhos. 
+Critério: o personagem não antecipa um save, não atravessa barreiras previstas e não fica preso; encerrar os casos já resolvidos.
 
 ### Crashes e travamentos
 
 6/100\* | Crashes de hardware corrigidos na 1.0.2
 
-Há relatos antigos em portáteis e no chefe final ([28/07, 36,9 h - ROG Ally X e chefe final](https://steamcommunity.com/profiles/76561199472060310/recommended/1983620/)). A nota da 1.0.2 não especifica todos os cenários nem correção geral de engasgos.
+Há relatos antigos em portáteis e no chefe final ([28/07, 36,9 h - ROG Ally X e chefe final](https://steamcommunity.com/profiles/76561199472060310/recommended/1983620/)). A nota da 1.0.2 não especifica todos os cenários nem correção geral de travamentos.
 
-**Pedido concreto:** Testar primeira luta, segunda área e chefe final em PC de entrada e portáteis; registrar logs e tempo de quadro. Critério: nenhum crash ou congelamento nos cenários verificados.
+**Sugestão:** Testar primeira luta, segunda área e chefe final em PC low-end e portáteis (se possível); registrar logs e tempo de quadro. 
+Critério: nenhum crash ou congelamento nos cenários verificados.
 
-## Playtests de experiência
+## Playtests de experiência de usuário
 
 ### Primeira floresta
 
@@ -76,7 +81,8 @@ Há relatos antigos em portáteis e no chefe final ([28/07, 36,9 h - ROG Ally X 
 
 Alguns relatam floresta longa ou impressão inicial de linearidade ([29/07, 0,6 h - abandono na floresta](https://steamcommunity.com/profiles/76561197996226472/recommended/1983620/); [29/07, 6,9 h - começo lento, mas melhora depois](https://steamcommunity.com/profiles/76561198018911671/recommended/1983620/)).
 
-**Pedido concreto:** Observar jogadores novos da abertura ao primeiro ganho de mobilidade. Critério: compreendem objetivo e descobrem o apelo da exploração sem instrução externa; alterar apenas pontos de abandono reproduzidos.
+**Sugestão:** Adicionar indicadores para medir o progresso de jogadores novos do início até ganhar a primeira habilidade de mobilidade. 
+Critério: compreendem objetivo e descobrem o apelo da exploração sem instrução externa; alterar apenas pontos de abandono reproduzidos.
 
 ### Leitura dos inimigos
 
@@ -84,15 +90,17 @@ Alguns relatam floresta longa ou impressão inicial de linearidade ([29/07, 0,6 
 
 Jogadores relatam alcance surpreendente ou inimigos sobre plataformas precisas ([06/08, 0,3 h - alcance dos ataques](https://steamcommunity.com/profiles/76561198062347370/recommended/1983620/); [24/07, 11,2 h - inimigos em trechos precisos](https://steamcommunity.com/profiles/76561198317053451/recommended/1983620/)). Outros elogiam os chefes.
 
-**Pedido concreto:** Sobrepor hitboxes às animações e observar mortes nesses encontros. Critério: jogadores conseguem explicar por que sofreram dano e têm tempo de reação apropriado ao ataque.
+**Sugestão:** Verificar hitboxes contra as animações e observar mortes nesses encontros.
+Critério: jogadores conseguem explicar por que sofreram dano e têm tempo de reação apropriado ao ataque.
 
 ### Visão nos saltos
 
 2/100\* (pedidos explícitos) | Câmera do castelo ajustada na 1.0.3; pedido ainda não anunciado
 
-Dois jogadores pedem olhar para baixo antes de certos saltos ([30/07, 4,7 h - pedido de câmera](https://steamcommunity.com/profiles/76561198081171005/recommended/1983620/); [25/07, 8,6 h - pedido semelhante](https://steamcommunity.com/profiles/76561198415650031/recommended/1983620/)).
+Dois jogadores pedem olhar para baixo antes de certos saltos (look foward) ([30/07, 4,7 h - pedido de câmera](https://steamcommunity.com/profiles/76561198081171005/recommended/1983620/); [25/07, 8,6 h - pedido semelhante](https://steamcommunity.com/profiles/76561198415650031/recommended/1983620/)).
 
-**Pedido concreto:** Prototipar olhar para baixo ou enquadramento pontual. Critério: o jogador vê destino e perigo antes de saltar sem perder o personagem de vista.
+**Sugestão:** Prototipar olhar para baixo (ou direção apontada) ou enquadramento pontual. 
+Critério: o jogador vê destino e perigo antes de saltar sem perder o personagem de vista.
 
 ## Oportunidades após validação
 
