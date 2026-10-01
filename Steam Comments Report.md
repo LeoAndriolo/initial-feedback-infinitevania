@@ -1,8 +1,10 @@
-# Infinitevania Feedback de jogadores e verificação das atualizações
+# Infinitevania - Feedback de comentários da Steam
 
 Relatório para a equipe JHT Games | 29 de setembro de 2026 | [Página do jogo na Steam](https://store.steampowered.com/app/1983620/Infinitevania/) (App ID 1983620)
 
-Olá, equipe JHT Games. Analisei avaliações de Infinitevania e comparei os relatos com as notas das versões 1.0.1 a 1.0.4. O jogo recebe elogios à movimentação, à exploração e à dublagem brasileira. A tabela abaixo destaca o que merece investigação e o que já teve uma correção anunciada.
+O relatório faz uma análise das avaliações de Infinitevania e compara os relatos com as notas das versões 1.0.1 a 1.0.4. 
+O jogo recebeu elogios à movimentação, à exploração e à dublagem brasileira. 
+A tabela abaixo resume o que merece investigação e o que já teve uma correção anunciada.
 
 ## Decisão rápida
 
@@ -10,7 +12,7 @@ Olá, equipe JHT Games. Analisei avaliações de Infinitevania e comparei os rel
 | --- | --- | --- |
 | Recursos após morte | Relato isolado de 20/09, posterior à 1.0.4; sem correção específica anunciada. | Reproduzir o comportamento antes de classificar como bug. |
 | Resposta dos controles | Crítica de 13/09; sem mudança de tempo de resposta anunciada. | Medir entrada, animação e ação; observar jogadores novos. |
-| Save da demo | A 1.0.3 trata dados corrompidos, sem mencionar migração da demo. | Testar save da demo válido e inválido. |
+| Save da demo | A 1.0.3 trata dados corrompidos, sem mencionar migração da demo. | Testar save da demo válido e inválido se pertinente. |
 | Colisões e rotas | Correções específicas nas versões 1.0.1 a 1.0.4. | Fazer regressão dirigida; fechar casos já resolvidos. |
 | Crashes e travadas | A 1.0.2 anuncia correção de crashes em portáteis e PCs antigos. | Verificar dispositivos e trechos dos relatos antigos. |
 
@@ -18,7 +20,9 @@ Notas consultadas: [1.0.1 (01/08)](https://store.steampowered.com/news/app/19836
 
 ## Base e limite da análise
 
-A API pública retornou 303 avaliações em 29/09/2026 (281 positivas, 22 negativas; compras e chaves). Li 100: todas as 22 negativas e 78 positivas sorteadas entre julho, agosto e setembro. **n/100* conta menções nesta amostra, não a porcentagem de jogadores afetados**, pois todas as críticas foram incluídas de propósito. Uma avaliação conta uma vez em cada tema. Não testei a build atual; ausência nas notas não prova ausência de correção.
+A API pública da Steam retornou 303 avaliações em 29/09/2026 (281 positivas, 22 negativas; compras e chaves). A amostra tem tamanho de 100: todas as 22 negativas e 78 positivas sorteadas entre julho, agosto e setembro. 
+
+**n/100* (mencionado abaixo) conta menções nesta amostra, não a porcentagem de jogadores afetados**, pois todas as críticas foram incluídas de propósito. Uma avaliação conta uma vez em cada tema. Não testei a build atual comparando com as críticas; ausência nas notas não prova ausência de correção.
 
 ## Relatos a investigar na versão atual
 
