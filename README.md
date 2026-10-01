@@ -1,52 +1,64 @@
-# Relatório de Playtest / QA
+# Relatório de Playtest / QA Infinitevania
+
+Este relatório reúne o playtest e QA inicial de Infinitevania v1.0.4, com foco em bugs, UI/UX, inputs, legibilidade e comportamento técnico. O processo incluiu um playtest natural e um Tech Test utilizando BepInEx, UnityExplorer e um plugin próprio para visualizar colliders.
 
 ## Graphics
 
+Não aprofundei o estudo sobre a composição artística ou color pallete utilizada, acredito que possui pessoas mais capazes para isso. As notas que tomei foram apenas fatos que chamaram-me a atenção.
+
 - A animação de background do Main Menu funciona bem e já introduz visualmente o personagem principal.
-- O parallax do level inicial é bem executado.
-- As montanhas mais distantes possuem uma cor muito próxima à das nuvens, reduzindo um pouco a separação visual entre os planos.
-- A tipografia utilizada nas páginas do Bestiary possui baixa legibilidade. As letras são muito verticais e ficam visualmente muito próximas umas das outras.
+- O parallax do level inicial após a cutscene é bem executado, com o único detalhe de que as montanhas mais distantes possuem uma cor muito próxima à das nuvens, reduzindo um pouco a separação visual entre os planos.
+- A tipografia utilizada nas páginas do Bestiary (livro de monstros) possui baixa legibilidade. As letras são muito verticais e ficam visualmente muito próximas umas das outras.
 - Durante o teste técnico, percebi que castiçais e lustres possuem interação/destruição, um detalhe visual interessante do cenário.
 
 ## GUI
 
-- O Main Menu esconde o cursor do mouse, aparentemente de forma intencional. Isso também evita inconsistências relacionadas às áreas clicáveis dos botões.
-- Os botões possuem bom feedback visual e SFX nos estados de hover e selected.
-- O background preto do panel de Settings parece um pouco agressivo comparado ao restante da interface. Consideraria utilizar um cinza bem escuro para suavizar.
+O intuito aqui era verificar consistência nos elementos e em seu comportamento.
+
+- O Main Menu esconde o cursor do mouse, aparentemente de forma intencional. Isso pode evitar inconsistências relacionadas às áreas clicáveis dos botões.
+- Os botões possuem bom feedback visual e SFX nos estados de hover e selected, bom design.
+- O background preto do panel de Settings parece um pouco agressivo comparado ao restante da interface. Consideraria utilizar um cinza bem escuro para suavizar ou um background animado.
 - A localization para 10 idiomas é um ponto bastante positivo e amplia bem o mercado potencial.
-- A opção de tamanho do texto apresentou pouca diferença perceptível no meu monitor de 23". Seria interessante verificar a diferença em telas maiores e televisores.
-- Gostei bastante do design dos botões no panel Controls.
-- O feedback sonoro ao alternar entre opções no Controls também funciona bem.
+- A opção de tamanho do texto apresentou pouca diferença perceptível no meu monitor de 23". Acredito que a diferença em telas maiores e televisores é mais perceptível.
+- Gostei bastante da arte dos botões no panel Controls.
+- O feedback sonoro ao alternar entre opções no Controls também funciona bem, bom design.
 - A cor interna das representações das teclas possui contraste relativamente baixo, embora o conteúdo continue legível.
-- Há suporte para resolução até 4K.
-- As opções para desativar CRT Filter, Lights, Particles e Screen Shake, além dos Color Blindness Modes, ajudam bastante no quesito acessibilidade.
-- A divisão das configurações de áudio em diferentes canais também é bem profissional.
-- A maioria dos menus pode ser controlada por Arrow Keys/WASD, mas o panel de Credits exige mouse scroll para navegar verticalmente. Seria interessante manter o padrão de navegação por teclado.
-- O indicador Confirm / Enter no rodapé de Settings parece desnecessário em algumas telas, já que as alterações são aplicadas imediatamente. Ele faz mais sentido no Main Menu.
+- As opções para desativar CRT Filter, Lights, Particles e Screen Shake, além de Color Blindness Mode, ajudam bastante no quesito acessibilidade.
+- A divisão das configurações de áudio em diferentes canais é bem profissional, bom design.
+- A maioria dos menus pode ser controlada por Arrow Keys/WASD, mas o panel de Credits exige mouse scroll para navegar verticalmente. Seria interessante manter o padrão de navegação por teclado (acredito não ter problema em controles).
+- O indicador Confirm / Enter no rodapé de Settings parece desnecessário em Settings, já que as alterações são aplicadas imediatamente. Ele faz mais sentido no Main Menu.
 - As sombras nos textos dos comandos do rodapé ajudam na legibilidade, mas em algumas partes do Main Menu ainda há pouco contraste com o background, especialmente sobre a mão do personagem segurando a esfera.
-- A transição Start → Choose Save possui ótimo feedback visual e sonoro.
+- A transição Start → Choose Save possui ótimo feedback visual e sonoro na transição, bom design.
 - O fundo totalmente preto de Choose Save/Load também parece um pouco agressivo, embora a interface em si esteja muito bem executada.
 
 ## Performance
 
-- Nenhum problema relevante de performance foi identificado até o momento.
+O vídeo do playtest inicial (link abaixo) possui algumas estatísticas de performance, mas não explorei muito.
+
+- Nenhum problema relevante de performance foi identificado até a parte que cheguei.
 - Não percebi stutters, quedas significativas de FPS ou problemas aparentes durante as transições testadas.
 
 ## Music
 
-- Nenhum problema específico identificado até o momento.
+Novamente, não sou especialista para aprofundar, mas a trilha sonora e SFX foram bem agradáveis. Joguei com diálogo em inglês e acredito que os diálogos em português devem estar melhores como citado por comentários na Steam.
+
+- Nenhum problema específico identificado.
 - Continuar observando consistência de volume e transições entre áreas durante os próximos testes.
 
 ## SFX
 
+Foquei mais em feedback de UI.
+
 - Bom feedback sonoro nos botões do Main Menu.
-- Bom feedback sonoro ao navegar pelas opções do Controls.
+- Bom feedback sonoro ao navegar pelas opções do Settings/Controls.
 - A transição Start → Choose Save utiliza bem SFX em conjunto com o feedback visual.
 
 ## Gameplay
 
-- O level design inicial orienta muito bem o jogador: o caminho para a direita é inicialmente bloqueado enquanto uma escadaria naturalmente incentiva a exploração na outra direção.
-- A dificuldade encontrada até agora parece adequada para o gênero.
+Além do playtest inicial, gravei um tech test com mods para verificar colliders e o comportamento de algumas mecânicas.
+
+- O level design inicial (+onboarding) orienta muito bem o jogador: o caminho para a direita é inicialmente bloqueado enquanto uma escadaria naturalmente incentiva a exploração na outra direção.
+- A dificuldade encontrada durante o playtest pareceu adequada para o gênero.
 - A história e a progressão estão bem implementadas.
 - O segundo encontro/fase de Etrom apresentou ataques bem construídos e interessantes de enfrentar.
 - Existe uma possível inconsistência na combinação de inputs:
@@ -55,13 +67,11 @@
   - O Dash pode ser utilizado no ar se `Space` for solto após o início do pulo.
 - Vale investigar se esse comportamento de Dash é intencional ou uma consequência da forma como os inputs simultâneos estão sendo tratados.
 
-## Misc Issues
+## Misc
 
 ### Possível collider inesperado
 
 Durante o teste técnico, encontrei um collider em uma área secreta do level inicial.
-
-**Sugestão:** verificar se o collider é intencional e se corresponde corretamente à geometria visual da área.
 
 ### Credits dependente de mouse
 
@@ -92,7 +102,7 @@ A fonte das páginas do Bestiary pode dificultar leitura prolongada.
 - Nenhum bug relevante encontrado.
 - O jogo apresenta um nível alto de polish.
 - História e progressão funcionaram bem durante o primeiro contato.
-- A dificuldade parece coerente com o gênero.
+- A dificuldade parece coerente com o gênero. 
 - Como referência pessoal de dificuldade, meu último metroidvania/plataformer foi *Hollow Knight: Silksong*.
 
 
@@ -116,8 +126,8 @@ A fonte das páginas do Bestiary pode dificultar leitura prolongada.
    Consegui carregar cenas específicas, o que foi útil porque a GUI do UnityExplorer estava bloqueando os inputs do mouse.
 
    **Pontos observados:**
-   - Os colliders dos espinhos são menores do que a arte, oferecendo uma margem de segurança para o jogador. Considero isso uma boa decisão de design.
-   - Identifiquei objetos destrutíveis no cenário que não havia percebido durante o primeiro playtest.
+   - Os colliders dos espinhos são menores do que a arte, oferecendo uma margem de segurança para o jogador, bom design.
+   - Identifiquei objetos destrutíveis no cenário que não havia percebido durante o primeiro playtest (castiçais).
    - O player possui dois Box Colliders que apresentam um pequeno atraso em relação ao movimento do personagem.
    - A espada permaneceu em estado flamejante após uma troca forçada de cena. Isso provavelmente ocorreu porque o estado do personagem não foi resetado ao mudar de cena dessa forma.
 
