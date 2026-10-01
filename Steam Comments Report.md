@@ -10,11 +10,12 @@ A tabela abaixo resume o que merece investigação e o que já teve uma correç�
 
 | Tema | Situação nas notas oficiais | Próxima ação |
 | --- | --- | --- |
-| Recursos após morte | Relato isolado de 20/09, posterior à 1.0.4; sem correção específica anunciada. | Reproduzir o comportamento antes de classificar como bug. |
-| Resposta dos controles | Crítica de 13/09; sem mudança de tempo de resposta anunciada. | Medir entrada, animação e ação; observar jogadores novos. |
-| Save da demo | A 1.0.3 trata dados corrompidos, sem mencionar migração da demo. | Testar save da demo válido e inválido se pertinente. |
-| Colisões e rotas | Correções específicas nas versões 1.0.1 a 1.0.4. | Fazer regressão dirigida; fechar casos já resolvidos. |
-| Crashes e travadas | A 1.0.2 anuncia correção de crashes em portáteis e PCs antigos. | Verificar dispositivos e trechos dos relatos antigos. |
+| Recuperação de recursos após morte | Relato de 20/09, posterior à 1.0.4; sem correção específica anunciada. A causa ainda é incerta. | Reproduzir morte, retorno e coleta com diferentes saves antes de classificar como bug. |
+| Resposta dos controles | Crítica de 13/09; sem ajuste específico anunciado. Há também elogios à precisão. | Comparar por debug a ativação do botão, animação, deslocamento e golpe nos encontros citados. |
+| Primeira floresta | Relatos antigos apontam ritmo lento ou linearidade inicial; é uma hipótese de experiência, não um bug confirmado. | Medir a progressão de jogadores novos até a primeira habilidade de mobilidade e observar os pontos de abandono. |
+| Colisões e rotas | Correções específicas anunciadas nas versões 1.0.1 a 1.0.4; os relatos da amostra são de julho. | Repetir as rotas relatadas e encerrar os casos resolvidos após regressão. |
+| Crashes e travamentos | A 1.0.2 anuncia correção de crashes em portáteis e PCs antigos, sem cobrir explicitamente todos os cenários relatados. | Testar primeira luta, segunda área e chefe final em PC de entrada e portáteis, se possível. |
+| Save da demo (baixa prioridade) | A 1.0.3 trata dados corrompidos, sem mencionar migração da demo; a demo parece não estar mais disponível. | Se ainda houver saves da demo em uso, testar arquivos válidos e inválidos para evitar carregamento infinito. |
 
 Notas consultadas: [1.0.1 (01/08)](https://store.steampowered.com/news/app/1983620/view/1839676055889734); [1.0.2 (07/08)](https://store.steampowered.com/news/app/1983620/view/1840310314343644); [1.0.3 (15/08)](https://store.steampowered.com/news/app/1983620/view/1840944183782849); [1.0.4 (18/09)](https://store.steampowered.com/news/app/1983620/view/1844115010494693). A 1.0.4 é a última publicação oficial encontrada até a coleta. Uma avaliação de agosto foi editada para registrar que as travadas na primeira luta haviam sido resolvidas ([08/08, 2,0 h - atualização do relato](https://steamcommunity.com/profiles/76561198176811909/recommended/1983620/)).
 
