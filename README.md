@@ -91,7 +91,7 @@ A fonte das páginas do Bestiary pode dificultar leitura prolongada.
 
 - Version: `1.0.4`
 - Build ID: `25357912`
-- Platform: PC
+- Platform: PC (Ryzen 5 3500X / 16GB RAM / SSD / GEFORCE GTX 1660 SUPER (6GB))
 - OS: Windows 10
 - Input: Keyboard + Mouse
 - Recording: OBS
