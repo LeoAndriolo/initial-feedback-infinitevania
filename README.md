@@ -108,6 +108,8 @@ A fonte das páginas do Bestiary pode dificultar leitura prolongada.
 
 ### Vídeos da sessão
 
+   Obs: Os vídeos estão sem áudio por uma configuração errada no OBS.
+
 1. **Infinitevania v1.0.4 — 10-01-26**  
    https://youtube.com/live/40l5QkuY76M  
    Playtest de aproximadamente **35 minutos**, sem anotações durante a sessão, com o objetivo de ter um primeiro contato com o jogo.  
